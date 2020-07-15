@@ -3,6 +3,13 @@
     <head>
         <title>高松市中央卸売市場</title>
         <script>
+            var not = 0;
+            function counter() {
+                not++;
+                if (not >= 2) {
+                    alert("ページを更新してから入力してください");
+                }
+            }
             function onButtonClick() {
                 var norn = document.forms.searchform.searchbox.value;
                 var result = document.getElementById("searchresult");
@@ -24,7 +31,7 @@
                     result.innerHTML = "19右　台車の上";
                 } else if (norn == "19名前") {
                     result.innerHTML = "19左　床";
-                } else if (norn == "19和子さん") {
+                } else if (norn == "19和子") {
                     result.innerHTML = "19左にいる女の人　/　19左の右側にある台車の上";
                 } else if (norn == "34大浜") {
                     result.innerHTML = "34から南に入ってすぐ左で魚を切っている人";
@@ -58,7 +65,7 @@
         <h3>高松市中央卸売市場場内案内</h3>
         <form action="" id="searchform">
             <input id="searchbox" placeholder="番号・名前" type="text">
-            <input type="button" value="検索" onclick="onButtonClick();">
+            <input type="button" value="検索" onclick="counter(); onButtonClick()">
         </form>
         <div id="searchresult"></div>
     </body>
