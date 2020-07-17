@@ -49,10 +49,10 @@ function onButtonClick() {
         result.innerHTML = "34中　木の机の上";
     } else if (norn == "35あうん") {
         result.innerHTML = "35外　壁「34」の前　地面";           
-    } else if (norn == "35魚神") {
+    } else if (norn == "35魚神" || norn == "35うおがみ") {
         result.innerHTML = "35外　壁「34」の前　地面　/　読み方：うおがみ";           
-    } else if (norn == "35岡田") {
-        result.innerHTML = "西　トラック：5787　/　別名：アジ岡田";
+    } else if (norn == "35岡田" || norn == "35アジ岡田") {
+        result.innerHTML = "西　トラック：5787";
     } else if (norn == "35亨すけ") {
         result.innerHTML = "北側外　35から外に出て右の机の上";
     } else if (norn == "35高橋") {
@@ -73,8 +73,8 @@ function onButtonClick() {
         result.innerHTML = "魚長　/　南　看板「高松東魚市場」の前　右";           
     } else if (norn == "148") {
         result.innerHTML = "北　35の外　/　トラック：117";           
-    } else if (norn == "151") {
-        result.innerHTML = "北　35の外　/　西トイレ前のパレットの前の地面　/　トラック：1310　/　別名：151志度";           
+    } else if (norn == "151" || norn == "151志度") {
+        result.innerHTML = "北　35の外　西トイレ前のパレットの前の地面　/　トラック：1310　/　「151」と「151志度」は同じ";           
     } else if (norn == "154") {
         result.innerHTML = "東　トラック：154";           
     } else if (norn == "164") {
